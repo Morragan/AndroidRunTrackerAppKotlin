@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">Czarkomondo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="preference_file_key" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.PREFERENCE_FILE_KEY
+    </string>
+    <string name="notification_title">Bieganie</string>
+    <string name="distance">Dystans</string>
+    <string name="zero_dot">0.00</string>
+    <string name="zero_colon">0:00</string>
+    <string name="rate">Tempo</string>
+    <string name="calories">Kalorie</string>
+    <string name="icon_content_description">Ikona</string>
+    <string name="summary">Podsumowanie</string>
+    <string name="time">Czas</string>
+    <string name="speed">Śr. prędkość</string>
+    <string name="pace">Śr. tempo</string>
+    <string name="water">Nawodnienie</string>
+    <string name="front_calories">KALORIE</string>
+    <string name="front_pace">TEMPO</string>
+    <string name="front_distance">DYSTANS</string>
+    <string name="status_hint">Jak się udał trening?</string>
+    <string name="timer_state" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.timerstate
+    </string>
+    <string name="preference_weight" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.weight
+    </string>
+    <string name="preference_height" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.height
+    </string>
+    <string name="preference_gender" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.gender
+    </string>
+    <string name="preference_vibe_interval" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.vibeinterval
+    </string>
+    <string name="preference_first_launch" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.firstlaunch
+    </string>
+    <string name="preference_distance" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.distance
+    </string>
+    <string name="preference_time_unit" translatable="false" templateMergeStrategy="preserve">
+        com.example.czarek.czarkomondo.timeunit
+    </string>
+    <string name="settings_profile_text">Profil</string>
+    <string name="settings_achievements_text">Osiągnięcia</string>
+    <string name="settings_resolution_text">Postanowienie</string>
+    <string name="profile_kilometers_abbv">km</string>
+    <string name="profile_calories_abbv">kcal</string>
+    <string name="profile_time_abbv">h</string>
+    <string name="trainings">Treningi</string>
+    <string name="credits">Autorzy</string>
+    <string name="records">Rekordy</string>
+    <string name="best_distance">Największy dystans:</string>
+    <string name="best_calories">Najwięcej spalonych kalorii:</string>
+    <string name="longest_time">Najdłuższy bieg:</string>
+    <string name="height">Wysokość</string>
+    <string name="language">Język</string>
+    <string name="weight">Waga</string>
+    <string name="gender">Płeć</string>
+    <string name="profile_save">Zapisz</string>
+    <string name="validation_error">Poprawnie wypełnij pola</string>
+    <string name="status">Status</string>
+    <string name="zero">0</string>
+    <string name="vibration_interval">Wibracje co ? metrów</string>
+    <string name="first_launch_dialog_title">Witaj, nowy użytkowniku!</string>
+    <string name="first_launch_dialog_body">Zanim zaczniesz korzystać z Czarkomondo, zalecam Ci ustawić twoje dane
+        profilowe, by pomiary aplikacji były dokładniejsze
+    </string>
+    <string name="go_to_settings">Przejdź do ustawień</string>
+    <string name="resolution_first_part">Postanawiam pokonywać</string>
+    <string name="resolution_second_part">każdego</string>
+    <string name="applicaton">Aplikacja</string>
+    <string name="author">Cezary Szmurło</string>
+    <string name="icon_authors">Autorzy ikon</string>
+    <string name="icon_authors_names">Freepik, Becris, Eucalyp, Srip</string>
+    <string name="resolution_notification_text">Zobacz jak ci poszło!</string>
+    <string name="profile_cancel">Anuluj</string>
+    <string name="waiting">Jeszcze chwila…</string>
+    <string name="resolution_completed">Udało się!</string>
+    <string name="resolution_not_completed">Nie udało się 😞</string>
+    <string-array name="genders_array">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </string-array>
+    <string-array name="distance_units_array">
+        <item>kilometrów</item>
+        <item>metrów</item>
+    </string-array>
+    <string-array name="time_units_array">
+        <item>tygodnia</item>
+        <item>miesiąca</item>
+    </string-array>
+</resources>

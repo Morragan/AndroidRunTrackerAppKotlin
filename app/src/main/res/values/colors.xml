@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#7fd615</color>
+    <color name="colorPrimaryDark">#55910e</color>
+    <color name="colorAccent">#fda50f</color>
+    <color name="background_material_light" tools:ignore="PrivateResource">#f8f8f8</color>
+    <color name="fab_color_go">#7fd615</color>
+    <color name="fab_color_pause">#fce205</color>
+    <color name="fab_color_stop">#ff2222</color>
+    <color name="azure">#0080ff</color>
+    <color name="text_color_black">#111</color>
+    <color name="text_color_black_light">#222</color>
+</resources>

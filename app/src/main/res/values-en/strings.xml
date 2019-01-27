@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Czarkomondo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="notification_title">Running</string>
+    <string name="distance">Distance</string>
+    <string name="zero_dot">0.00</string>
+    <string name="zero_colon">0:00</string>
+    <string name="rate">Pace</string>
+    <string name="calories">Calories</string>
+    <string name="icon_content_description">Icon</string>
+    <string name="summary">Summary</string>
+    <string name="time">Time</string>
+    <string name="speed">Avg. speed</string>
+    <string name="pace">Avg. pace</string>
+    <string name="water">Water intake</string>
+    <string name="front_calories">CALORIES</string>
+    <string name="front_pace">PACE</string>
+    <string name="front_distance">DISTANCE</string>
+    <string name="status_hint">How did your training go?</string>
+    <string name="settings_profile_text">Profile</string>
+    <string name="settings_achievements_text">Achievements</string>
+    <string name="settings_resolution_text">Resolution</string>
+    <string name="profile_kilometers_abbv">km</string>
+    <string name="profile_calories_abbv">kcal</string>
+    <string name="profile_time_abbv">h</string>
+    <string name="trainings">Trainings</string>
+    <string name="credits">Credits</string>
+    <string name="records">Records</string>
+    <string name="best_distance">Best distance:</string>
+    <string name="best_calories">Most calories burnt:</string>
+    <string name="longest_time">Longest run:</string>
+    <string name="height">Height</string>
+    <string name="language">Language</string>
+    <string name="weight">Weight</string>
+    <string name="gender">Gender</string>
+    <string name="profile_save">Save</string>
+    <string name="validation_error">Incorrectly filled fields</string>
+    <string name="status">Status</string>
+    <string name="zero">0</string>
+    <string name="vibration_interval">Vibrates every ? meters</string>
+    <string name="first_launch_dialog_title">Hello, new user!</string>
+    <string name="first_launch_dialog_body">Before you start using Czarkomondo, I strongly advise you to set up your
+        profile data, to make app\'s measurements more accurate
+    </string>
+    <string name="go_to_settings">Let\'s do it!</string>
+    <string name="resolution_first_part">I decide that I will run</string>
+    <string name="resolution_second_part">every</string>
+    <string name="applicaton">Application</string>
+    <string name="author">Cezary Szmurło</string>
+    <string name="icon_authors">Icon authors</string>
+    <string name="icon_authors_names">Freepik, Becris, Eucalyp</string>
+    <string name="resolution_notification_text">See how you did!</string>
+    <string name="profile_cancel">Cancel</string>
+    <string name="waiting">Just a moment…</string>
+    <string name="resolution_completed">You did it!</string>
+    <string name="resolution_not_completed">You failed 😞</string>
+    <string-array name="genders_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="distance_units_array">
+        <item>kilometers</item>
+        <item>meters</item>
+    </string-array>
+    <string-array name="time_units_array">
+        <item>week</item>
+        <item>month</item>
+    </string-array>
+</resources>

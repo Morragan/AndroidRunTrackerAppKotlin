@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="fragment_container_padding_bottom">56dp</dimen>
+    <dimen name="fab_size">72dp</dimen>
+    <dimen name="chrono_text_size">64sp</dimen>
+    <dimen name="metrics_text_size">32sp</dimen>
+    <dimen name="fab_padding">8dp</dimen>
+    <dimen name="metrics_spacing">16dp</dimen>
+    <dimen name="metrics_margin_bottom">12dp</dimen>
+    <dimen name="fabs_spacing">10dp</dimen>
+    <dimen name="history_icon_size">18dp</dimen>
+    <dimen name="history_date_text_size">24sp</dimen>
+    <dimen name="map_height">256dp</dimen>
+    <dimen name="summary_icon_size">48dp</dimen>
+    <dimen name="summary_icon_padding">4dp</dimen>
+    <dimen name="summary_box_padding">12dp</dimen>
+    <dimen name="settings_row_height">44dp</dimen>
+    <dimen name="settings_icon_text_interspace">15dp</dimen>
+    <dimen name="settings_icon_padding">2dp</dimen>
+    <dimen name="settings_text_size">22sp</dimen>
+    <dimen name="box_margin">12dp</dimen>
+    <dimen name="box_description_margin_start">20dp</dimen>
+    <dimen name="box_padding">12dp</dimen>
+    <dimen name="achievements_record_margin">8dp</dimen>
+    <dimen name="profile_edit_text_width">150dp</dimen>
+    <dimen name="profile_padding">16dp</dimen>
+    <dimen name="training_details_map_margin_bottom">8dp</dimen>
+    <dimen name="training_details_icon_text_spacing">6dp</dimen>
+    <dimen name="training_details_box_item_margin_top_bottom">6dp</dimen>
+    <dimen name="history_row_spacing">8dp</dimen>
+    <dimen name="history_row_icon_text_spacing">4dp</dimen>
+    <dimen name="resolution_summary_circle_size">300dp</dimen>
+    <dimen name="result_text_size">32sp</dimen>
+    <dimen name="resolution_summary_margin_top">24dp</dimen>
+    <dimen name="percentage_text_size">36sp</dimen>
+    <dimen name="completion_text_size">24sp</dimen>
+</resources>

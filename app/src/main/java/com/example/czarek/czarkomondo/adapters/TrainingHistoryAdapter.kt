@@ -1,6 +1,8 @@
 package com.example.czarek.czarkomondo.adapters
 
 import android.annotation.SuppressLint
+import android.app.AlertDialog
+import android.app.Application
 import android.content.Context
 import android.content.Intent
 import android.os.Parcelable
@@ -9,6 +11,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.czarek.czarkomondo.R
+import com.example.czarek.czarkomondo.TrainingViewModel
+import com.example.czarek.czarkomondo.TrainingViewModelFactory
 import com.example.czarek.czarkomondo.activities.TrainingDetailsActivity
 import com.example.czarek.czarkomondo.fragments.TrackTrainingFragment
 import com.example.czarek.czarkomondo.models.dto.Training
@@ -30,7 +34,7 @@ class TrainingHistoryAdapter(private val context: Context) :
     }
 
     override fun onBindViewHolder(holder: TrainingHistoryViewHolder, position: Int) {
-        holder.setData(trainings[position], position)
+        holder.setData(trainings[position])
     }
 
     fun setData(trainings: List<Training>) {
@@ -40,11 +44,11 @@ class TrainingHistoryAdapter(private val context: Context) :
 
     inner class TrainingHistoryViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         @SuppressLint("SetTextI18n")
-        fun setData(training: Training, position: Int) {
+        fun setData(training: Training) {
             itemView.history_training_date.text =
-                    SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(training.date)
+                SimpleDateFormat("dd MMMM yyyy", Locale.getDefault()).format(training.date)
             itemView.history_distance.text =
-                    "%.2f KM".format(training.routeSections.sumByDouble { it.distance.toDouble() }/1000)
+                "%.2f KM".format(training.routeSections.sumByDouble { it.distance.toDouble() } / 1000)
             val formattedTime = String.format(
                 "%02d:%02d",
                 TimeUnit.MILLISECONDS.toHours(training.timeInMillis),
@@ -54,13 +58,27 @@ class TrainingHistoryAdapter(private val context: Context) :
             itemView.history_kcal.text = training.caloriesBurnt.toString().plus(" KCAL")
 
             itemView.setOnClickListener {
-                val intent = Intent(context, TrainingDetailsActivity::class.java)
+                @Suppress("UNCHECKED_CAST") val intent = Intent(context, TrainingDetailsActivity::class.java)
                     .putExtra(TrackTrainingFragment.TIME_DATA_KEY, training.timeInMillis)
-                    .putParcelableArrayListExtra(TrackTrainingFragment.ROUTE_SECTIONS_DATA_KEY, training.routeSections as ArrayList<Parcelable>)
+                    .putParcelableArrayListExtra(
+                        TrackTrainingFragment.ROUTE_SECTIONS_DATA_KEY,
+                        training.routeSections as ArrayList<Parcelable>
+                    )
                     .putExtra(TrackTrainingFragment.CALORIES_DATA_KEY, training.caloriesBurnt)
                     .putExtra(TrackTrainingFragment.STATUS_DATA_KEY, training.status)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
                 context.startActivity(intent)
+            }
+            itemView.setOnLongClickListener {
+                val viewModel =
+                    TrainingViewModelFactory(context.applicationContext as Application).create(TrainingViewModel::class.java)
+                val builder = AlertDialog.Builder(context)
+                builder.setMessage(R.string.confirm_delete)
+                    .setPositiveButton(R.string.positive_delete) { _, _ -> viewModel.delete(training) }
+                    .setNegativeButton(R.string.negative_delete) { _, _ -> }
+                builder.create()
+                builder.show()
+                return@setOnLongClickListener true
             }
         }
     }

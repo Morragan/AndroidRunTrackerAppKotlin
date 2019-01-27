@@ -83,6 +83,9 @@
     <string name="waiting">Jeszcze chwila…</string>
     <string name="resolution_completed">Udało się!</string>
     <string name="resolution_not_completed">Nie udało się 😞</string>
+    <string name="confirm_delete">Czy na pewno chcesz usunąć trening?</string>
+    <string name="positive_delete">Usuń</string>
+    <string name="negative_delete">Anuluj</string>
     <string-array name="genders_array">
         <item>Mężczyzna</item>
         <item>Kobieta</item>

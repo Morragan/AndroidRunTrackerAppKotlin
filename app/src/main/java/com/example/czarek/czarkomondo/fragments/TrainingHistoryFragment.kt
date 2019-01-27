@@ -27,7 +27,7 @@ class TrainingHistoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapter = TrainingHistoryAdapter(activity!!.applicationContext)
+        val adapter = TrainingHistoryAdapter(activity!!)
         val viewModel =
             TrainingViewModelFactory(activity!!.application).create(TrainingViewModel::class.java)
         viewModel.trainingsList.observe(this, Observer { trainings ->

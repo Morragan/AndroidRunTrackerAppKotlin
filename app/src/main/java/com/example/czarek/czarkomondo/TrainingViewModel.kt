@@ -27,6 +27,10 @@ class TrainingViewModel(application: Application) : AndroidViewModel(application
         repository.insert(training)
     }
 
+    fun delete(training: Training) = scope.launch(Dispatchers.IO) {
+        repository.delete(training)
+    }
+
     suspend fun getLastTrainings(startDate: Long): List<Training>{
         return repository.getLastTrainings(startDate)
     }

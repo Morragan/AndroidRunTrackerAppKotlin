@@ -15,9 +15,6 @@ class ActionsAdapter(private val context: Context, private val dataSource: List<
         val itemView = convertView ?: inflater.inflate(R.layout.settings_row, parent, false)
         itemView.settings_row_drawable.setImageDrawable(context.getDrawable(getItem(position).drawableId))
         itemView.settings_row_text.text = context.getString(getItem(position).nameId)
-
-
-
         return itemView
     }
 
